@@ -1,5 +1,7 @@
 # BOSH Release for scope
 
+BOSH Release for [Weave Scope](https://github.com/weaveworks/scope)
+
 ## Usage
 
 To use this bosh release, first upload it to your bosh:

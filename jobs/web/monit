@@ -1,0 +1,5 @@
+check process web
+  with pidfile /var/vcap/sys/run/web/web.pid
+  start program "/var/vcap/jobs/web/bin/monit_debugger web_ctl '/var/vcap/jobs/web/bin/ctl start'"
+  stop program "/var/vcap/jobs/web/bin/monit_debugger web_ctl '/var/vcap/jobs/web/bin/ctl stop'"
+  group vcap

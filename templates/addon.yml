@@ -1,0 +1,10 @@
+releases:
+- name: scope
+  version: 0.1.0
+addons:
+- name: scope
+  jobs:
+  - name: agent
+    release: scope
+    consumes:
+      scope_web: {from: scope_web, deployment: scope-warden}

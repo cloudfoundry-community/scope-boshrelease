@@ -1,0 +1,15 @@
+---
+name: agent
+packages:
+- scope
+
+consumes:
+- name: scope_web
+  type: scope_web
+
+templates:
+  bin/ctl: bin/ctl
+  bin/monit_debugger: bin/monit_debugger
+  data/properties.sh.erb: data/properties.sh
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh

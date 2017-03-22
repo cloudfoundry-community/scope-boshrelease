@@ -1,0 +1,5 @@
+check process agent
+  with pidfile /var/vcap/sys/run/agent/agent.pid
+  start program "/var/vcap/jobs/agent/bin/monit_debugger agent_ctl '/var/vcap/jobs/agent/bin/ctl start'"
+  stop program "/var/vcap/jobs/agent/bin/monit_debugger agent_ctl '/var/vcap/jobs/agent/bin/ctl stop'"
+  group vcap

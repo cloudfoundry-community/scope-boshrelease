@@ -7,10 +7,12 @@ update:
   serial: false
 
 instance_groups:
-  - name: just_install_packages
+  - name: web
     jobs:
-    - name: just_install_packages
+    - name: web
       release: scope
+      provides:
+        scope_web: {as: scope_web, shared: true }
     instances: 1
     persistent_disk: 0
     resource_pool: small_z1

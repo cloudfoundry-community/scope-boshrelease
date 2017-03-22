@@ -9,4 +9,5 @@ CPUS=$(grep -c ^processor /proc/cpuinfo)
 export HOME=/var/vcap
 
 mkdir -p $BOSH_INSTALL_TARGET/bin
+chmod +x scope/scope
 cp scope/scope $BOSH_INSTALL_TARGET/bin

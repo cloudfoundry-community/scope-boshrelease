@@ -1,1 +1,27 @@
---- {}
+---
+meta:
+  name:    scope
+  release: scope
+  target:  sw
+  url:     https://ci.starkandwayne.com
+
+  initial_version: 0.1.0
+
+  bosh-lite:
+    target: https://10.58.111.44:25555
+    deployment: scope-warden
+
+  aws:
+    access_key: (( vault "secret/aws/cfcommunity:access" ))
+    secret_key: (( vault "secret/aws/cfcommunity:secret" ))
+
+  github:
+    owner:  cloudfoundry-community
+    repo:   scope-boshrelease
+    branch: master
+    private_key:  (( vault "secret/pipelines/scope-boshrelease/github:private" ))
+    access_token: (( vault "secret/pipelines/scope-boshrelease/github:token" ))
+
+  slack:
+    webhook: (( vault "secret/pipelines/scope-boshrelease/slack:webhook" ))
+    channel: '#botspam'

@@ -1,0 +1,24 @@
+---
+packages:
+- name: scope
+  version: c2d2db36c7f20db588b33bbb321a3909c3c591d9
+  fingerprint: c2d2db36c7f20db588b33bbb321a3909c3c591d9
+  sha1: 61dae2026504aa671d50590e5a25206ae0ea7224
+  dependencies: []
+jobs:
+- name: agent
+  version: e536638b3774f070dbb520c89aec5fb34209768f
+  fingerprint: e536638b3774f070dbb520c89aec5fb34209768f
+  sha1: b4e0d3631a7e9b2d6dc675d72b8dfe8b34a0d8a0
+- name: web
+  version: dee5b93c3896f424331fbd62b532b77bdf8c2aca
+  fingerprint: dee5b93c3896f424331fbd62b532b77bdf8c2aca
+  sha1: ccc76257f5a7855cd6cfbc4db0263798fa7c9260
+license:
+  version: 619c92c47e75d14b99b0928f0d803fecf2fd280c
+  fingerprint: 619c92c47e75d14b99b0928f0d803fecf2fd280c
+  sha1: c0880f0c38d75a178da78db729982692b42b4b05
+commit_hash: 836f5fa6
+uncommitted_changes: true
+name: scope
+version: 0.2.1

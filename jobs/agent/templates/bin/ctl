@@ -17,7 +17,7 @@ case $1 in
     # store pid in $PIDFILE
     echo $$ > $PIDFILE
     apt-get install conntrack -y
-    export SCOPE_HOSTNAME="<%= spec.job.name %>-<%= spec.index %>"
+    export SCOPE_HOSTNAME="<%= spec.job.name %>-<%= spec.id %>"
     exec /var/vcap/packages/scope/bin/scope --mode probe -logtostderr --no-app <%= link('scope_web').instances.first.address %> \
          >>$LOG_DIR/$JOB_NAME.log 2>&1
 
